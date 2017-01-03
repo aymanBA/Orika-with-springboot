@@ -22,8 +22,8 @@ public class UserServiceImpl implements UserService {
 
 	@Override
 	public UserDto findByUsername(String username) {
-		// TODO Auto-generated method stub
-		return null;
+		User user=userRepository.findByUsername(username);
+		return userMapper.map(user, UserDto.class);
 	}
 
 	@Override

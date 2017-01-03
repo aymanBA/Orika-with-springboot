@@ -16,6 +16,7 @@ public class UserMapper extends ConfigurableMapper{
 	      .field("id", "id")
 	      .field("username", "username")
 	      .field("password", "password")
+	      .field("role", "roleDto")
 	      .byDefault()
 	      .register();      
 	  }

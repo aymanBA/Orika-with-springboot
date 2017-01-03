@@ -6,4 +6,5 @@ import com.intellitech.orika.model.User;
 
 public interface UserRepository extends JpaRepository<User, Long>{
 
+	public User findByUsername(String username);
 }
